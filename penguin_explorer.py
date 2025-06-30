@@ -19,7 +19,7 @@ st.set_page_config(
     layout="wide",
     page_icon="🐧"
 )
-st.title("Pinguin Explorer Devrielle Stokes")
+st.title("Penguin Explorer - Devrielle Stokes")
 st.markdown("<style>.stApp { background-color: #E6F7FF; }</style>", unsafe_allow_html=True)
 
 # Load and prepare penguin data
