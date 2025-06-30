@@ -14,7 +14,13 @@ import random
 import pandas as pd
 
 # Title
-st.title("Devrielle Stokes")
+st.set_page_config(
+    page_title="Penguin Explorer",
+    layout="wide",
+    page_icon="🐧"
+)
+st.title("Pinguin Explorer Devrielle Stokes")
+st.markdown("<style>.stApp { background-color: #E6F7FF; }</style>", unsafe_allow_html=True)
 
 # Load and prepare penguin data
 penguins = sns.load_dataset("penguins").dropna()
@@ -53,3 +59,10 @@ fig_violin = px.violin(
     title="Penguin Body Mass by Species and Sex"
 )
 st.plotly_chart(fig_violin)
+
+with st.expander("Data Summary"):
+    st.write(penguins.describe())
+
+# Page Footer
+st.markdown("---")
+st.markdown("© 2025 • Built with ❤️ using Streamlit & Plotly @ VCU")
