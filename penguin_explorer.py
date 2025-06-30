@@ -25,7 +25,7 @@ st.markdown("<style>.stApp { background-color: #E6F7FF; }</style>", unsafe_allow
 # Load and prepare penguin data
 penguins = sns.load_dataset("penguins").dropna()
 
-# Add latitude & longitude for the map (simulated)
+# Add latitude & longitude for the map
 island_coords = {
     "Biscoe": (-63.8, -63.4),
     "Dream": (-64.7, -62.9),
