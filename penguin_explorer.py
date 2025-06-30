@@ -7,8 +7,6 @@ Original file is located at
     https://colab.research.google.com/drive/1D4At6zu3S9JZm9GxSOeK4tU__Sesl90w
 """
 
-!pip install streamlit
-
 import streamlit as st
 import seaborn as sns
 import plotly.express as px
